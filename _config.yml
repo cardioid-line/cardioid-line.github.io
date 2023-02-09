@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo Template
+title: Cardioid's Blog
 subtitle: ''
 description: ''
 keywords:
-author: JiJi
-language: en
+author: Cardioid Cheng
+language: zh-CN
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://jiji.pro/hexo-template
+url: https://cardioid-line.github.io
 permalink: :title/
 permalink_defaults:
 pretty_urls:
