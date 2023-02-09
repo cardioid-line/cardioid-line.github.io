@@ -4,7 +4,7 @@
 
 # Site
 title: Cardioid's Blog
-subtitle: ''
+subtitle: ' '
 description: ''
 keywords:
 author: Cardioid Cheng
@@ -97,9 +97,26 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: hexo-theme-matery
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+friends:
+  enable: true
+  title: 友链
+  path: friends/index.html
+  data:
+    - group: 大佬的博客们
+      description: 快来膜大佬
+      items:
+        - name: 花猪のBlog
+          url: https://cnhuazhu.top
+          img: https://gcore.jsdelivr.net/gh/CNhuazhu/Image/avatar.jpg
+          description: 花猪大佬的博客
+        - name: 吉吉博客
+          url: https://mmdjiji.com
+          img: https://mmdjiji.com/images/avatar.png
+          description: 自古吉吉萌萌哒 ( •̀ ω •́ )✧
