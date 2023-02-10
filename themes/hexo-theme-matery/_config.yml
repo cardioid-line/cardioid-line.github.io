@@ -350,7 +350,7 @@ gitalk:
   oauth:
     clientId: eb89429bc610f986522b
     clientSecret: 72d4b1da3fbe71202c34621e3e45728b532cf937
-  admin:
+  admin: cardioid-line
 
 # the Gitment config，default disabled
 # Gitment 评论模块的配置，默认为不激活
