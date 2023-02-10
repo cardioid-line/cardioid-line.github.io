@@ -109,7 +109,7 @@ friends:
   title: 友链
   path: friends/index.html
   data:
-    - group: 大佬の博客们
+    - group: 大佬のBlogs
       description: 此处狠狠地膜大佬！
       items:
         - name: 花猪のBlog
