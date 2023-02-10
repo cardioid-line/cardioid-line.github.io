@@ -361,7 +361,7 @@ postInfo:
   totalCount: false # 设置站点文章总字数统计为 true.
   min2read: false # 阅读时长.
   readCount: false # 阅读次数.
-```
+
 
 ### 添加emoji表情支持（可选的）
 
