@@ -44,14 +44,14 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight:
-  enable: true
+  enable: false
   line_number: true
   auto_detect: false
   tab_replace: ''
   wrap: true
   hljs: false
 prismjs:
-  enable: false
+  enable: true
   preprocess: true
   line_number: true
   tab_replace: ''
@@ -109,14 +109,24 @@ friends:
   title: 友链
   path: friends/index.html
   data:
-    - group: 大佬的博客们
-      description: 快来膜大佬
+    - group: 大佬の博客们
+      description: 此处狠狠地膜大佬！
       items:
         - name: 花猪のBlog
           url: https://cnhuazhu.top
           img: https://gcore.jsdelivr.net/gh/CNhuazhu/Image/avatar.jpg
           description: 花猪大佬的博客
-        - name: 吉吉博客
+        - name: 吉吉のBlog
           url: https://mmdjiji.com
           img: https://mmdjiji.com/images/avatar.png
           description: 自古吉吉萌萌哒 ( •̀ ω •́ )✧
+
+# Search
+search:
+  path: search.xml
+  field: post
+
+# PinYin
+permalink_pinyin:
+  enable: true
+  separator: '-' # default: '-'
