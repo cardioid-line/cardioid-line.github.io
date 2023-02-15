@@ -323,6 +323,9 @@ myGallery:
     - /medias/featureimages/9.jpg
     - /medias/featureimages/10.jpg
     - /medias/featureimages/11.jpg
+    - /medias/featureimages/12.jpg
+    - /medias/featureimages/13.jpg
+    - /medias/featureimages/14.jpg
 
 
 # Whether to display post-calender in the `archive` page
@@ -549,6 +552,8 @@ featureImages:
 - /medias/featureimages/10.jpg
 - /medias/featureimages/11.jpg
 - /medias/featureimages/12.jpg
+- /medias/featureimages/13.jpg
+- /medias/featureimages/14.jpg
 
 
 
