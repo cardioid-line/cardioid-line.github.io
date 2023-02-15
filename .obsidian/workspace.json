@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/2019北京高考理科数学真题解析(小题).md",
+                "file": "source/_posts/数据结构与算法.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#数据结构 ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/2019北京高考理科数学真题解析(小题).md",
+                "file": "source/_posts/数据结构与算法.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/2019北京高考理科数学真题解析(小题).md",
+                "file": "source/_posts/数据结构与算法.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/2019北京高考理科数学真题解析(小题).md"
+                "file": "source/_posts/数据结构与算法.md"
               }
             }
           }
@@ -146,7 +147,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "08d599482939be00",
+  "active": "bf49cdada5580967",
   "lastOpenFiles": [
     "source/_posts/2019北京高考理科数学真题解析(大题).md",
     "images/2023/1.png.md",
