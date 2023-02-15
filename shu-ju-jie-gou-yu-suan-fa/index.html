@@ -391,7 +391,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    426
+                    437
                 </div>
                 
 
@@ -422,7 +422,7 @@
 	char VerticesList[MAXV];                         //顶点表，MAXV为已定义常数
 	int Edge[MAXV][MAXV];                            //边表
 }MGraph;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>将图中出度大于入度的顶点称为$K$顶点。<br>请设计算法<code>int printVertices(MGraph G)</code>，对给定的任意非空有向图$G$，输出$G$中所有$K$顶点，并返回$K$顶点的个数。<br>（1）给出算法的基本思想；（2）根据设计思想，采用C或C++语言描述算法，关键之处给出注释。</p>
+<p>将图中出度大于入度的顶点称为$K$顶点。<br>请设计算法<code>int printVertices(MGraph G)</code>，对任意给定的非空有向图$G$，输出$G$中所有$K$顶点，并返回$K$顶点的个数。<br>（1）给出算法的基本思想；（2）根据设计思想，采用C或C++语言描述算法，关键之处给出注释。</p>
 <blockquote>
 <p>首先遍历图$G$中的每个顶点，邻接矩阵中第$i$行之和即为第$i$个顶点的出度，第$i$列之和即为第$i$个顶点的入度，计算出每个顶点的入度和出度。如果一个顶点的出度大于入度，则将该$K$顶点输出，计数器加一。</p>
 </blockquote>
@@ -447,7 +447,8 @@
 <blockquote>
 <ol>
 <li>时间复杂度O($n^2$)，空间复杂度O(1)；</li>
-<li>vertex(pl. vertices) n.顶点、头顶、天顶。</li>
+<li>vertex(pl. vertices) n.顶点、头顶、天顶；</li>
+<li>以上代码来源于ChatGPT，有删改。</li>
 </ol>
 </blockquote>
 
@@ -806,7 +807,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">511</span>
+                        class="white-color">522</span>
             
             
             
