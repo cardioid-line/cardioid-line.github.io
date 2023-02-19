@@ -384,14 +384,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-02-15
+                    2023-02-19
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    437
+                    463
                 </div>
                 
 
@@ -422,9 +422,10 @@
 	char VerticesList[MAXV];                         //顶点表，MAXV为已定义常数
 	int Edge[MAXV][MAXV];                            //边表
 }MGraph;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>将图中出度大于入度的顶点称为$K$顶点。<br>请设计算法<code>int printVertices(MGraph G)</code>，对任意给定的非空有向图$G$，输出$G$中所有$K$顶点，并返回$K$顶点的个数。<br>（1）给出算法的基本思想；（2）根据设计思想，采用C或C++语言描述算法，关键之处给出注释。</p>
+<p>将图中出度大于入度的顶点称为$K$顶点。<br>例如，下图中结点$a$和结点$b$均为$K$顶点。<br><img src="/images/2023/2.png" width="15%" height="15%"><br>请设计算法<code>int printVertices(MGraph G)</code>，对任意给定的非空有向图$G$，输出$G$中所有$K$顶点，并返回$K$顶点的个数。<br>（1）给出算法的基本思想；（2）根据设计思想，采用C或C++语言描述算法，关键之处给出注释。</p>
+<hr>
 <blockquote>
-<p>首先遍历图$G$中的每个顶点，邻接矩阵中第$i$行之和即为第$i$个顶点的出度，第$i$列之和即为第$i$个顶点的入度，计算出每个顶点的入度和出度。如果一个顶点的出度大于入度，则将该$K$顶点输出，计数器加一。</p>
+<p>邻接矩阵中第$i$行之和即为第$i$个顶点的出度，第$i$列之和即为第$i$个顶点的入度。因此，只要分别按行按列遍历图$G$的邻接矩阵，即可求出每个顶点的入度和出度。如果一个顶点的出度大于入度，则将该$K$顶点输出，计数器加一。</p>
 </blockquote>
 <pre class="line-numbers language-C" data-language="C"><code class="language-C">int printVertices(MGraph G){                      //打印图G的所有K顶点并计数
 	int i, j;
@@ -438,12 +439,13 @@
 			if(G.Edge[j][i]==1) inDegree++;       //有结点j到结点i的边，入度加一
 		}
 		if(outDegree&gt;inDegree){                   //出度大于入度的顶点是K顶点
-			printf("%s是K顶点",G.VerticeList[i]); //输出K顶点
+			printf("%s是K顶点\n",G.VerticeList[i]);
+			                                      //输出K顶点
 			count++;                              //计数器的值加一
 		}                    
 	}
 	return count;
-}                                                 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+}                                                 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <blockquote>
 <ol>
 <li>时间复杂度O($n^2$)，空间复杂度O(1)；</li>
@@ -807,7 +809,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">522</span>
+                        class="white-color">548</span>
             
             
             
