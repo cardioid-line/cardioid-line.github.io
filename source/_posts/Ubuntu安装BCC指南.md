@@ -52,7 +52,7 @@ sudo apt-get install libclang-12-dev
 # 编译安装
 在虚拟机里进入网页[Releases · iovisor/bcc (github.com)](https://github.com/iovisor/bcc/releases)，下载安装包，把安装包解压放在主目录。
 此时你的主目录里面有个bcc-src-with-submodule的文件夹，该文件夹内部有bcc文件夹，bcc文件夹内部有很多文件夹和文件。
-注意：**此处不能在外部机器下载安装包再用VMware Tools把安装包复制进去**，这样会报莫名其妙的错误！
+注意：**此处不能在物理机下载安装包再用VMware Tools把安装包复制到虚拟机内部，这样会报莫名其妙的错误！
 下面的命令行均在bcc-src-with-submodule的终端执行。
 ``` powershell
 mkdir bcc/build
@@ -79,7 +79,8 @@ ls
 ``` powershell
 sudo ./cachestat
 ```
-如果可以看到终端中正在生成表格，则表明安装成功！
+如果可以看到终端中正在生成如下的表格，则表明安装成功！
+<img src="/images/2023/4.png" width="30%" height="30%"/>
 # 注
 本文参考了：[Ubuntu 18.04 LTS上编译安装BCC_银杏丷的博客-CSDN博客](https://blog.csdn.net/weixin_43793731/article/details/128364192)，对此表示感谢！
 如有问题可在评论区提问。~~如果我刚好能解答的话我就解答了~~
