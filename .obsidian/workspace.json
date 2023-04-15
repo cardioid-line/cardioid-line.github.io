@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/浅浅理顺一下深度学习在干嘛.md",
+                "file": "source/_posts/深度学习，你在干嘛？.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/浅浅理顺一下深度学习在干嘛.md",
+                "file": "source/_posts/深度学习，你在干嘛？.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/浅浅理顺一下深度学习在干嘛.md",
+                "file": "source/_posts/深度学习，你在干嘛？.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/浅浅理顺一下深度学习在干嘛.md"
+                "file": "source/_posts/深度学习，你在干嘛？.md"
               }
             }
           }
@@ -146,7 +146,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "c62dfb91b4d8cb4b",
+  "active": "aa4120a945b4f48e",
   "lastOpenFiles": [
     "source/_posts/数据结构与算法.md",
     "source/_posts/浅浅理顺一下深度学习在干嘛.md",
