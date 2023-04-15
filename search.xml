@@ -4,9 +4,9 @@
   
     
     <entry>
-      <title>浅浅理顺一下深度学习在干嘛</title>
-      <link href="/qian-qian-li-shun-yi-xia-shen-du-xue-xi-zai-gan-ma/"/>
-      <url>/qian-qian-li-shun-yi-xia-shen-du-xue-xi-zai-gan-ma/</url>
+      <title>深度学习，你在干嘛？</title>
+      <link href="/shen-du-xue-xi-ni-zai-gan-ma/"/>
+      <url>/shen-du-xue-xi-ni-zai-gan-ma/</url>
       
         <content type="html"><![CDATA[<p>FROM. 李宏毅老师的网上教程。</p><h1 id="一、人生意义：找函数罢了"><a href="#一、人生意义：找函数罢了" class="headerlink" title="一、人生意义：找函数罢了"></a>一、人生意义：找函数罢了</h1><p>深度学习找一个函数$y=f(x)$。其中$x$和$y$可以是数值、序列、自然语言、图片视频音频等等。<br>深度学习用来回归（给一个$x$得一个$y$）、分类、创作……</p><h1 id="二、干活的准则：损失函数"><a href="#二、干活的准则：损失函数" class="headerlink" title="二、干活的准则：损失函数"></a>二、干活的准则：损失函数</h1><p>MAE：$e=|y-\widehat{y}|$；MSE：$e=(y-\widehat{y})^2$。<br>损失Loss为$L=\frac{1}{n}\sum_{n}e_n$。</p><h1 id="三、谁来指引我干活：梯度下降"><a href="#三、谁来指引我干活：梯度下降" class="headerlink" title="三、谁来指引我干活：梯度下降"></a>三、谁来指引我干活：梯度下降</h1><p>函数在某点的梯度是一个向量，它的方向与取得最大方向导数的方向一致，它的模为方向导数的最大值。<br>所以沿梯度方向，损失函数Loss咵咵咵降得最快，能尽早降到导数值是0的点，也就找到了损失函数的极小值点。<br>每次算完梯度$\nabla$后，$w(n+1)=w(n)-\eta\frac{dLoss}{dw(n)}$，超参$\eta$是学习率。<br>$\theta(n+1)=argmin_{\theta}(L)$。</p><h1 id="四、计算机怎么算梯度：反向传播"><a href="#四、计算机怎么算梯度：反向传播" class="headerlink" title="四、计算机怎么算梯度：反向传播"></a>四、计算机怎么算梯度：反向传播</h1><p>网络从前往后搭，梯度从后往前算。<br>（具体而言就是算链式法则求导，理解起来不难，但不想写了，写到现在都0:25了，开摆！）</p><h1 id="五、刻画函数：激活函数"><a href="#五、刻画函数：激活函数" class="headerlink" title="五、刻画函数：激活函数"></a>五、刻画函数：激活函数</h1><p>Sigmoid：$y=c\frac{1}{1+e^{-(b+wx)}}$，用一些Sigmoid的线性组合可以组成各式各样的函数；<br>ReLU：$y=c max(0,b+wx)$，用一些ReLU的线性组合可以组成各式各样的函数。</p><h1 id="六、神经元在工作"><a href="#六、神经元在工作" class="headerlink" title="六、神经元在工作"></a>六、神经元在工作</h1><p>$y=b+\sum_{i}c_i sigmoid(b_i+\sum_{j}w_{ij}x_j)$，<br>即，$y=b_{0}+C^T\sigma(b+wx)$。</p><h1 id="七、内存装不下"><a href="#七、内存装不下" class="headerlink" title="七、内存装不下"></a>七、内存装不下</h1><p>batch：每次读入一个batch，然后根据这一个batch的数据往梯度下降的方向来调整网络中的各种参数，使得损失函数的值尽可能小。<br>epoch：跑完所有batch是一轮epoch。</p><h1 id="八、搭建深度学习神经网络"><a href="#八、搭建深度学习神经网络" class="headerlink" title="八、搭建深度学习神经网络"></a>八、搭建深度学习神经网络</h1><p>堆更多的隐藏层，小心过拟合哈。</p>]]></content>
       
