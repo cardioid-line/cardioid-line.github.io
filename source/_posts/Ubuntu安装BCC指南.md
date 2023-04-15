@@ -15,7 +15,7 @@ tags: 计算机与安全技术
 eBPF（Extended Berkeley Packet Filter，扩展伯克利数据包过滤器），是一个在Linux操作系统中运行沙盒程序的工具，从而让我们可以在Linux操作系统中 ~~为所欲为~~ 进行网络数据包过滤、**安全监控与分析**等。
 eBPF本身原理比较复杂 ~~我还没学会~~，详见官网：http://www.ebpf.io/
 eBPF会将C语言源代码编译成eBPF字节码，然后钩到Linux操作系统上等待被触发。~~这辈子也别想让程序设计基础63分的我写C~~ 。为了能够使用Python等更加高级的语言使用eBPF的功能，开发人员设计了一些eBPF工具链以解放程序员，例如**BCC**、Cilium、Bpftrace等。
-BCC是一个基于eBPF的工具包，该工具包提供了一些库，使得我们可以利用Python写eBPF程序，还提供了一些命令行和**示例** ~~感谢这些示例，我连Python都不用写啦！~~。
+BCC（BPF Compiler Collection）是一个基于eBPF的工具包，该工具包提供了一些库，使得我们可以利用Python写eBPF程序，还提供了一些命令行和**示例** ~~感谢这些示例，我连Python都不用写啦！~~。
 **本文介绍如何在Ubuntu**（最常见的一个Linux操作系统）**中安装BCC。** 读至文章末尾，相信你一定可以运行BCC示例。
 # 开始之前
 你需要确保
