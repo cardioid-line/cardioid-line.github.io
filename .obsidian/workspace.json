@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#梯度下降",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -147,11 +146,11 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "bf49cdada5580967",
+  "active": "c62dfb91b4d8cb4b",
   "lastOpenFiles": [
     "source/_posts/数据结构与算法.md",
-    "source/_posts/Ubuntu安装BCC指南.md",
     "source/_posts/浅浅理顺一下深度学习在干嘛.md",
+    "source/_posts/Ubuntu安装BCC指南.md",
     "source/_posts/内核安全数据项.md",
     "source/_posts/BCC样例学习笔记.md",
     "source/images/2023/4.png",
