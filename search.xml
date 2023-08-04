@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>高考导数题合辑</title>
+      <link href="/gao-kao-dao-shu-ti-he-ji/"/>
+      <url>/gao-kao-dao-shu-ti-he-ji/</url>
+      
+        <content type="html"><![CDATA[<h1 id="2022"><a href="#2022" class="headerlink" title="2022"></a>2022</h1><img src="/images/2023/5.png" width="40%" height="40%"><p>（1）<br>因为$f(x)=e^xln(1+x)$，<br>所以$f’(x)=e^x[\frac{1}{1+x}+ln(1+x)]$。<br>所以$f(0)=0$，$f’(0)=1$，<br>所以曲线$y=f(x)$在$(0,f(0))$处的切线方程为$y=x$。<br>（2）<br>由题设，$g(x)=e^x[\frac{1}{1+x}+ln(1+x)]$，<br>所以$g’(x)=e^x[\frac{1+2x}{(1+x)^2}+ln(1+x)]$。<br>因为$x&gt;0$，所以$g’(x)&gt;0$，<br>所以函数$g(x)$在$[0,+∞)$上单调递增。<br>（3）<br>不妨假设$t&gt;0$取定，令$h(x)=f(x+t)-f(x)-f(t)$，$x∈[0,+∞)$，<br>则$h’(x)=f’(x+t)-f’(x)$，$x∈[0,+∞)$。<br>由（2）知，$f’(x)$在$[0,+∞)$上单调递增，<br>所以$h’(x)=f’(x+t)-f’(x)&gt;0$，<br>从而$h(x)$在$[0,+∞)$上单调递增。<br>因为$h(0)=-f(0)=0$，<br>所以当$s&gt;0$时，$h(s)&gt;h(0)=0$，即$f(s+t)-f(s)-f(t)&gt;0$，<br>综上，对任意的$s,t∈[0,+∞)$，有$f(s+t)&gt;f(s)+f(t)$。</p><blockquote><p>本题第（1）问是平和的求切线问题。本题第（2）问考察研究函数单调性的通性通法，通过直接观察$g’(x)$的代数特征来判断正负而非继续求导是考生应当具有的能力。本题第（3）问是意料之外的双元变量问题，角度刁钻难度大，仍不是后续复习的方向。另外，本题第（3）问是凸函数的通性，大学生可以了解一下。</p></blockquote><p>（未完待续……）</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 回忆以前是件消遣的事 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>深度学习，你在干嘛？</title>
       <link href="/shen-du-xue-xi-ni-zai-gan-ma/"/>
       <url>/shen-du-xue-xi-ni-zai-gan-ma/</url>
