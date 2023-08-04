@@ -4,16 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "e0b2e65f2d984598",
+        "id": "f15d2ea89e09aa02",
         "type": "tabs",
         "children": [
           {
-            "id": "aa4120a945b4f48e",
+            "id": "fca1c0c6331f5263",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/深度学习，你在干嘛？.md",
+                "file": "source/_posts/数据结构与算法.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9401c80187b5931a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "source/_posts/你好呀.md",
                 "mode": "source",
                 "source": false
               }
@@ -64,6 +76,14 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "9f08fc7adcddcc81",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
         ]
       }
@@ -85,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/深度学习，你在干嘛？.md",
+                "file": "source/_posts/数据结构与算法.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/深度学习，你在干嘛？.md",
+                "file": "source/_posts/数据结构与算法.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/深度学习，你在干嘛？.md"
+                "file": "source/_posts/数据结构与算法.md"
               }
             }
           }
@@ -146,11 +166,14 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "aa4120a945b4f48e",
+  "active": "fca1c0c6331f5263",
   "lastOpenFiles": [
+    "source/_posts/你好呀.md",
     "source/_posts/数据结构与算法.md",
-    "source/_posts/浅浅理顺一下深度学习在干嘛.md",
+    "source/_posts/深度学习，你在干嘛？.md",
+    "source/_posts/计算机组成原理.md",
     "source/_posts/Ubuntu安装BCC指南.md",
+    "source/_posts/浅浅理顺一下深度学习在干嘛.md",
     "source/_posts/内核安全数据项.md",
     "source/_posts/BCC样例学习笔记.md",
     "source/images/2023/4.png",
