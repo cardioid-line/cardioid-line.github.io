@@ -50,7 +50,7 @@
 
     <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
 
-<meta name="generator" content="Hexo 6.3.0">
+<meta name="generator" content="Hexo 7.3.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
 </head>
 
@@ -384,14 +384,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-08-05
+                    2024-07-23
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    818
+                    799
                 </div>
                 
 
@@ -426,39 +426,17 @@
 <li>记得随时拍快照。</li>
 </ul>
 <h1 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h1><p>下面的命令行均在主目录的终端执行。<br>先更新升级。</p>
-<pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">sudo apt-get update
-sudo apt-get upgrade<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<figure class="highlight powershell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt<span class="literal">-get</span> update</span><br><span class="line">sudo apt<span class="literal">-get</span> upgrade</span><br></pre></td></tr></tbody></table></figure>
 <p>将Python的默认版本改为python3。</p>
-<pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">sudo apt-get install python-is-python3<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight powershell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt<span class="literal">-get</span> install python<span class="operator">-is</span><span class="literal">-python3</span></span><br></pre></td></tr></tbody></table></figure>
 <p>安装如下依赖。</p>
-<pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">sudo apt-get <span class="token operator">-</span>y install bison
-sudo apt-get <span class="token operator">-</span>y install build-essential
-sudo apt-get <span class="token operator">-</span>y install cmake
-sudo apt-get <span class="token operator">-</span>y install flex
-sudo apt-get <span class="token operator">-</span>y install git
-sudo apt-get <span class="token operator">-</span>y install libedit-dev
-sudo apt-get <span class="token operator">-</span>y install zlib1g-dev
-sudo apt-get <span class="token operator">-</span>y install libelf-dev
-sudo apt-get <span class="token operator">-</span>y install python3-distutils
-sudo apt-get install llvm-12
-sudo apt-get install libclang-12-dev<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight powershell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">sudo apt<span class="literal">-get</span> <span class="literal">-y</span> install bison</span><br><span class="line">sudo apt<span class="literal">-get</span> <span class="literal">-y</span> install <span class="built_in">build-essential</span></span><br><span class="line">sudo apt<span class="literal">-get</span> <span class="literal">-y</span> install cmake</span><br><span class="line">sudo apt<span class="literal">-get</span> <span class="literal">-y</span> install flex</span><br><span class="line">sudo apt<span class="literal">-get</span> <span class="literal">-y</span> install git</span><br><span class="line">sudo apt<span class="literal">-get</span> <span class="literal">-y</span> install lib<span class="built_in">edit-dev</span></span><br><span class="line">sudo apt<span class="literal">-get</span> <span class="literal">-y</span> install zlib1g<span class="literal">-dev</span></span><br><span class="line">sudo apt<span class="literal">-get</span> <span class="literal">-y</span> install libelf<span class="literal">-dev</span></span><br><span class="line">sudo apt<span class="literal">-get</span> <span class="literal">-y</span> install python3<span class="literal">-distutils</span></span><br><span class="line">sudo apt<span class="literal">-get</span> install llvm<span class="literal">-12</span></span><br><span class="line">sudo apt<span class="literal">-get</span> install libclang<span class="literal">-12-dev</span></span><br></pre></td></tr></tbody></table></figure>
 <h1 id="编译安装"><a href="#编译安装" class="headerlink" title="编译安装"></a>编译安装</h1><p>在虚拟机里进入网页<a target="_blank" rel="noopener" href="https://github.com/iovisor/bcc/releases">Releases · iovisor/bcc (github.com)</a>，下载安装包，把安装包解压放在主目录。<br>此时你的主目录里面有个bcc-src-with-submodule的文件夹，该文件夹内部有bcc文件夹，bcc文件夹内部有很多文件夹和文件。<br>注意：**此处不能在物理机下载安装包再用VMware Tools把安装包复制到虚拟机内部，这样会报莫名其妙的错误！<br>下面的命令行均在bcc-src-with-submodule的终端执行。</p>
-<pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">mkdir bcc/build
-cd bcc/build
-cmake <span class="token punctuation">.</span><span class="token punctuation">.</span>
-make
-sudo make install
-cmake <span class="token operator">-</span>DPYTHON_CMD=python3 <span class="token punctuation">.</span><span class="token punctuation">.</span>
-<span class="token function">pushd</span> src/python/
-make
-sudo make install
-<span class="token function">popd</span>
-export PYTHONPATH=$<span class="token punctuation">(</span>dirname `find <span class="token operator">/</span>usr/lib <span class="token operator">-</span>name bcc`<span class="token punctuation">)</span>:<span class="token variable">$PYTHONPATH</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight powershell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">mkdir bcc/build</span><br><span class="line"><span class="built_in">cd</span> bcc/build</span><br><span class="line">cmake ..</span><br><span class="line">make</span><br><span class="line">sudo make install</span><br><span class="line">cmake <span class="literal">-DPYTHON_CMD</span>=python3 ..</span><br><span class="line"><span class="built_in">pushd</span> src/python/</span><br><span class="line">make</span><br><span class="line">sudo make install</span><br><span class="line"><span class="built_in">popd</span></span><br><span class="line">export PYTHONPATH=<span class="variable">$</span>(dirname `find /usr/lib <span class="literal">-name</span> bcc`):<span class="variable">$PYTHONPATH</span></span><br></pre></td></tr></tbody></table></figure>
 <h1 id="大功告成"><a href="#大功告成" class="headerlink" title="大功告成"></a>大功告成</h1><p>在bcc-src-with-submodule的终端执行下面的命令行。</p>
-<pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">cd <span class="token operator">/</span>usr/share/bcc/tools
-<span class="token function">ls</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<figure class="highlight powershell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /usr/share/bcc/tools</span><br><span class="line"><span class="built_in">ls</span></span><br></pre></td></tr></tbody></table></figure>
 <p>你应当看到下图这些BCC示例。<br><img src="/images/2023/3.png" width="50%" height="50%"><br>这些示例均可以直接使用。以cachestat为例，命令行如下。</p>
-<pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">sudo <span class="token punctuation">.</span><span class="token operator">/</span>cachestat<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight powershell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ./cachestat</span><br></pre></td></tr></tbody></table></figure>
 <p>如果可以看到终端中正在生成如下的表格，则表明安装成功！<br><img src="/images/2023/4.png" width="30%" height="30%"></p>
 <h1 id="注"><a href="#注" class="headerlink" title="注"></a>注</h1><p>本文参考了：<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_43793731/article/details/128364192">Ubuntu 18.04 LTS上编译安装BCC_银杏丷的博客-CSDN博客</a>，对此表示感谢！<br>如有问题可在评论区提问。<del>如果我刚好能解答的话我就解答了</del></p>
 
@@ -631,19 +609,19 @@ export PYTHONPATH=$<span class="token punctuation">(</span>dirname `find <span c
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/shu-ju-jie-gou-yu-suan-fa/">
+                <a href="/wang-luo-yu-xi-tong-an-quan-ke-cheng-bi-ji/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="数据结构与算法">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="《网络与系统安全》课程笔记">
                         
-                        <span class="card-title">数据结构与算法</span>
+                        <span class="card-title">《网络与系统安全》课程笔记</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            【数据结构与算法】习题选编
+                            《网络与系统安全》课程笔记
                         
                     </div>
                     <div class="publish-info">
@@ -661,8 +639,8 @@ export PYTHONPATH=$<span class="token punctuation">(</span>dirname `find <span c
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%80%83%E8%AF%95%E9%A2%98%E5%BA%93/">
-                        <span class="chip bg-color">计算机考试题库</span>
+                    <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%8E%E5%AE%89%E5%85%A8%E7%90%86%E8%AE%BA/">
+                        <span class="chip bg-color">计算机与安全理论</span>
                     </a>
                     
                 </div>
@@ -814,7 +792,7 @@ export PYTHONPATH=$<span class="token punctuation">(</span>dirname `find <span c
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2023</span>
+                <span id="year">2023-2024</span>
             
             <a href="/about" target="_blank">Cardioid Cheng</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
@@ -823,7 +801,7 @@ export PYTHONPATH=$<span class="token punctuation">(</span>dirname `find <span c
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">4.8k</span>
+                        class="white-color">5.1k</span>
             
             
             
